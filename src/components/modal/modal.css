@@ -1,0 +1,103 @@
+.underlined_input {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  outline: none;
+  width: 80%;
+  color: #555555;
+  opacity: 1;
+  font-size: 14px;
+  font-family: "Gotham-Book";
+  letter-spacing: 0px;
+  text-align: left;
+  background: transparent;
+}
+
+.emp-dropdown {
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #cccccc;
+  width: 45%;
+}
+
+.emp-dropdown:hover {
+  border-bottom: 1px solid #cccccc !important;
+}
+
+.emp-dropdown {
+  width: 80%;
+}
+.emp-upload {
+  width: 80%;
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+  .emp-dropdown {
+    width: 53%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1234px) {
+  .emp-dropdown {
+    width: 42%;
+  }
+}
+.btn-cancel {
+  height: 50px;
+  width: 170px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 3px solid #569cb4;
+  opacity: 1;
+  text-align: center;
+  font-family: "Gotham-Bold";
+  font-size: 16px;
+  letter-spacing: 0.35px;
+  color: #569cb4;
+  opacity: 1;
+}
+
+.btn-upload {
+  height: 50px;
+  width: 170px;
+  background: #569cb4 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 16px #00000026;
+  border: 3px solid #ffffff;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: 1.06px;
+  font-family: "Gotham-Bold";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.btn-small-cancel {
+  height: 30px;
+  width: 120px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #569cb4;
+  opacity: 1;
+  text-align: center;
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  color: #569cb4;
+  opacity: 1;
+}
+
+.btn-cancel:hover {
+  background: #eaedee 0% 0% no-repeat padding-box;
+}
+
+.btn-upload:hover {
+  background: #0dcaf0 0% 0% no-repeat padding-box;
+}
+
+.p-dropdown-label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1 1 auto;
+  width: 1%;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  font-size: 14px;
+}

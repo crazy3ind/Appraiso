@@ -1,0 +1,305 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* PanelMenu Styles */
+.p-panelmenu
+  .p-panelmenu-header
+  .p-panelmenu-header-content
+  .p-panelmenu-header-link {
+  color: #6b7280;
+  padding: 1.25rem;
+  font-weight: 700;
+  background: transparent;
+}
+
+/* DataTable Base Styles */
+.p-datatable {
+  /* Header and body cells */
+  .p-datatable-thead > tr > th,
+  .p-datatable-tbody > tr > td {
+    padding: 0.3rem 0.5rem;
+    border-width: 0;
+
+    /* Add spacing between columns */
+    &:not(:last-child) {
+      border-right: 1px solid transparent; /* Adjust spacing as needed */
+      background-clip: padding-box;
+    }
+  }
+
+  /* Header specific styles */
+  .p-datatable-thead > tr > th {
+    background: #a17e00;
+    color: #ffffff;
+
+    /* Sortable column elements */
+    &.p-sortable-column {
+      .p-column-title,
+      .p-sortable-column-icon,
+      .p-sortable-column-badge {
+        vertical-align: middle;
+        color: inherit; /* Inherits from th */
+      }
+    }
+  }
+
+  /* Resizable table cells */
+  .p-datatable-resizable-table & {
+    > .p-datatable-thead > tr > th,
+    > .p-datatable-tfoot > tr > td,
+    > .p-datatable-tbody > tr > td {
+      max-width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  /* Paginator */
+  .p-paginator-bottom {
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+  }
+}
+
+/* Responsive column targeting */
+.p-datatable[pr_id_1] {
+  .p-datatable-wrapper .p-datatable-table {
+    .p-datatable-thead > tr > th:nth-child(2),
+    .p-datatable-tbody > tr > td:nth-child(2),
+    .p-datatable-tfoot > tr > td:nth-child(2) {
+      max-width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.custom-modal-upload {
+  padding: 60px;
+  position: relative;
+  height: 425px;
+  width: 788px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 22px #0000006e;
+  opacity: 1;
+}
+.modalh {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #569cb4;
+  color: black;
+}
+.model_htext-upload {
+  font-size: 12px;
+}
+.docnumber {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.44px;
+  color: #0c2340;
+}
+.modal-body-upload {
+  border: 1px dashed #afafaf;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  height: 160px;
+  width: 100%;
+  margin-top: 20px;
+  color: black;
+}
+.modalf-upload {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+.btn-cancel {
+  height: 50px;
+  width: 170px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 3px solid #569cb4;
+  opacity: 1;
+  text-align: center;
+  font-family: "Gotham-Bold";
+  font-size: 16px;
+  letter-spacing: 0.35px;
+  color: #569cb4;
+  opacity: 1;
+}
+
+.btn-upload {
+  height: 50px;
+  width: 170px;
+  background: #569cb4 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 16px #00000026;
+  border: 3px solid #ffffff;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: 1.06px;
+  font-family: "Gotham-Bold";
+  font-size: 16px;
+  color: #ffffff;
+}
+.btn-cancel:hover {
+  background: #eaedee 0% 0% no-repeat padding-box;
+}
+
+.btn-upload:hover {
+  background: #1d637c 0% 0% no-repeat padding-box;
+}
+
+.icon_section {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.file_detials {
+  display: block;
+  width: 70%;
+}
+.file_detials .label-tittle {
+  font-size: 12px;
+  text-align: left;
+  font-family: "Gotham-Book";
+  letter-spacing: 0px;
+  color: #808080;
+  opacity: 1;
+}
+.last_label {
+  float: right;
+  color: #808080;
+  opacity: 0.56;
+  top: 55px;
+  font-size: 12px;
+  font-family: "Gotham-Book";
+  position: relative;
+}
+.upload-icon {
+  color: #569cb4;
+  cursor: pointer;
+  font-size: 4rem;
+}
+.attachment {
+  font-size: 14px;
+  font-family: "Gotham-Book";
+  cursor: pointer;
+  text-decoration: underline;
+  color: #569cb4;
+}
+.attachment:hover {
+  color: #1d637c;
+}
+.no-record-found {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #808080;
+  margin-left: 5px;
+}
+.attch-modal-upload {
+  padding: 30px;
+  position: relative;
+  height: 280px;
+  width: 400px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 22px #0000006e;
+  opacity: 1;
+}
+.close_button {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.attch-modal-body {
+  display: inline-block;
+  color: black;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.attch-tittle {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.attch-tittle-all {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #569cb4;
+}
+
+.attch-tittle-all:hover {
+  color: #1d637c;
+}
+.attch-icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: #569cb4;
+}
+
+.attch-icon:hover {
+  color: #1d637c;
+}
+.attachment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.attachment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+.attch-file-name {
+  font-size: 14px;
+  font-family: "Gotham-Book";
+  text-align: justify;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.label-tittle-error {
+  margin-top: 4px;
+  font-size: 12px;
+  text-align: left;
+  font-family: "Gotham-Book";
+  letter-spacing: 0px;
+  color: red;
+  opacity: 1;
+}
+
+.attach-icon {
+  color: #569cb4;
+}

@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 12vh 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar main";
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(235, 235, 235);
+}
+main {
+  grid-area: main;
+  background-color: rgb(255, 255, 255);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.pt-logo {
+  width: 11vw;
+  padding-left: 1vh;
+}
