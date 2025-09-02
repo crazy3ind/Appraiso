@@ -63,7 +63,7 @@ function Login() {
   return (
     <div className="background-image-container">
       <img src={signupBg} />
-      <div className="absolute inset-0 flex flex-col items-center w-screen justify-center z-10 gap-8">
+      <div className="absolute inset-0 flex flex-col items-center w-screen justify-center z-10 gap-8 bg-blend-multiply">
         <div className="bg-gray-50 p-8 rounded-lg shadow-xl/20 flex flex-col items-center w-full max-w-md">
           <p className="text-black text-2xl sm:text-3xl md:text-3xl lg:text-4xl text-center mb-6">
             Login
